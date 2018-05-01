@@ -1,13 +1,6 @@
 The Pay library
 ===============
 
-***This is not official library!*** 
+This is fork of [trejjam/thepay-lib](https://github.com/Trejjam/ThePay-lib) based on last known commit working with Nette 2.2 and PHP 7.0 
 
-Installation
-------------
-
-The best way to install trejjam/thepay-lib is using  [Composer](http://getcomposer.org/):
-
-```sh
-$ composer require trejjam/thepay-lib:dev-namespaces
-```
+For documentation check [original repository](https://github.com/Trejjam/ThePay-lib)
