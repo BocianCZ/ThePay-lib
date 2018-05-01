@@ -8,11 +8,10 @@
 		"MIT"
 	],
 	"require": {
-		"php": ">=7.1"
+		"php": ">=7.0"
 	},
 	"require-dev": {
-		"nette/tester": "@dev",
-		"phpstan/phpstan": "^0.9.2"
+		"nette/tester": "@dev"
 	},
 	"suggest": {
 		"trejjam/thepay": "to use as nette extension"
