@@ -60,7 +60,7 @@ class Signature
 	 * @throws InvalidSignatureException
 	 * @throws MissingParameterException
 	 */
-	public static function validate(array $data, string $password, string $signature = NULL) : void
+	public static function validate(array $data, string $password, string $signature = NULL)
 	{
 		if (is_null($signature)) {
 			if (

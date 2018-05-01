@@ -60,19 +60,19 @@ class GetPaymentsResponse extends Response
 	/**
 	 * @param Payment[] $payments
 	 */
-	public function setPayments(array $payments = []) : void
+	public function setPayments(array $payments = [])
 	{
 		$this->payments = ValueFormatter::formatList(
 			'Tp\DataApi\Parameters\Payment', $payments
 		);
 	}
 
-	public function getPagination() : ?PaginationResponse
+	public function getPagination()
 	{
 		return $this->pagination;
 	}
 
-	public function setPagination(?PaginationResponse $pagination) : void
+	public function setPagination(PaginationResponse $pagination = null)
 	{
 		$this->pagination = $pagination;
 	}

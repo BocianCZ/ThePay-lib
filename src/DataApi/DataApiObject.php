@@ -152,7 +152,7 @@ abstract class DataApiObject implements ArrayAccess
 	 * @param string $offset
 	 * @param mixed  $value
 	 */
-	public function offsetSet($offset, $value) : void
+	public function offsetSet($offset, $value)
 	{
 		$setterName = 'set' . ucfirst($offset);
 
@@ -184,7 +184,7 @@ abstract class DataApiObject implements ArrayAccess
 	/**
 	 * @param string $offset
 	 */
-	public function offsetUnset($offset) : void
+	public function offsetUnset($offset)
 	{
 		$this->offsetSet($offset, NULL);
 	}

@@ -84,32 +84,32 @@ class ReturnedPayment extends Payment
 	/**
 	 * Correctly paid.
 	 */
-	public const STATUS_OK = 2;
+	const STATUS_OK = 2;
 	/**
 	 * Canceled by customer.
 	 */
-	public const STATUS_CANCELED = 3;
+	const STATUS_CANCELED = 3;
 	/**
 	 * Some error occurred during payment process.
 	 * Probably not payed.
 	 */
-	public const STATUS_ERROR = 4;
+	const STATUS_ERROR = 4;
 
 	/**
 	 * Payment was underpaid
 	 */
-	public const STATUS_UNDERPAID = 6;
+	const STATUS_UNDERPAID = 6;
 
 	/**
 	 * Payment was paid, but waiting for confirmation from payment system.
 	 */
-	public const STATUS_WAITING = 7;
+	const STATUS_WAITING = 7;
 
 	/**
 	 * Payment amount is blocked on customer's account. Money is charged after sending paymentDeposit request through
 	 * API. Used only for card payments.
 	 */
-	public const STATUS_CARD_DEPOSIT = 9;
+	const STATUS_CARD_DEPOSIT = 9;
 
 	protected static $BOOL_ARGS = [
 		'isOffline', 'needConfirm', 'isConfirm',
@@ -211,14 +211,15 @@ class ReturnedPayment extends Payment
 		$this->signature = $args['signature'];
 	}
 
-	/**
-	 * Use this call to verify signature of the payment.
-	 * this method is called automatically.
-	 *
-	 * @return true if signature is valid, otherwise throws
-	 *   a Tp\TpInvalidSignatureException.
-	 * @throws InvalidSignatureException, when signature is invalid.
-	 */
+    /**
+     * Use this call to verify signature of the payment.
+     * this method is called automatically.
+     *
+     * @param string|null $signature
+     * @return true if signature is valid, otherwise throws
+     *   a Tp\TpInvalidSignatureException.
+     * @throws InvalidSignatureException , when signature is invalid.
+     */
 	function verifySignature(string $signature = NULL) : bool
 	{
 		// check merchantId and accountId from request
@@ -264,12 +265,12 @@ class ReturnedPayment extends Payment
 		}
 	}
 
-	public function getRequestMerchantId() : ?int
+	public function getRequestMerchantId()
 	{
 		return $this->requestMerchantId;
 	}
 
-	public function getRequestAccountId() : ?int
+	public function getRequestAccountId()
 	{
 		return $this->requestAccountId;
 	}
@@ -335,7 +336,7 @@ class ReturnedPayment extends Payment
 	/**
 	 * @return string Returns the variable symbol, if valid, for offline payment method.
 	 */
-	function getVariableSymbol() : ?string
+	function getVariableSymbol()
 	{
 		return $this->variableSymbol;
 	}
@@ -361,7 +362,7 @@ class ReturnedPayment extends Payment
 	 * @return bool if actual action is confirmation about payment state - for online methods with additional
 	 *                 confirmation
 	 */
-	public function getIsConfirm() : ?bool
+	public function getIsConfirm()
 	{
 		return $this->isConfirm;
 	}
@@ -369,7 +370,7 @@ class ReturnedPayment extends Payment
 	/**
 	 * @return string specific symbol from bank transaction. Used only for permanent payments.
 	 */
-	public function getSpecificSymbol() : ?string
+	public function getSpecificSymbol()
 	{
 		return $this->specificSymbol;
 	}
@@ -385,7 +386,7 @@ class ReturnedPayment extends Payment
 	/**
 	 * @return string Number of customer's account in full format including bank code.
 	 */
-	public function getCustomerAccountNumber() : ?string
+	public function getCustomerAccountNumber()
 	{
 		return $this->customerAccountNumber;
 	}
@@ -393,7 +394,7 @@ class ReturnedPayment extends Payment
 	/**
 	 * @return string Name of customer's account.
 	 */
-	public function getCustomerAccountName() : ?string
+	public function getCustomerAccountName()
 	{
 		return $this->customerAccountName;
 	}

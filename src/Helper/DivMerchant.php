@@ -46,7 +46,7 @@ class DivMerchant extends Merchant
 	 *
 	 * @param string $skin
 	 */
-	public function setSkin(string $skin) : void
+	public function setSkin(string $skin)
 	{
 		$this->skin = $skin;
 	}
@@ -54,7 +54,7 @@ class DivMerchant extends Merchant
 	/**
 	 * Disable thepay css for button
 	 */
-	public function disableButtonCss() : void
+	public function disableButtonCss()
 	{
 		$this->disableButtonCss = TRUE;
 	}
@@ -62,7 +62,7 @@ class DivMerchant extends Merchant
 	/**
 	 * Enable thepay css for button
 	 */
-	public function enableButtonCss() : void
+	public function enableButtonCss()
 	{
 		$this->disableButtonCss = FALSE;
 	}
@@ -70,7 +70,7 @@ class DivMerchant extends Merchant
 	/**
 	 * Disable thepay css for offline payment popup box
 	 */
-	public function disablePopupCss() : void
+	public function disablePopupCss()
 	{
 		$this->disablePopupCss = TRUE;
 	}
@@ -78,7 +78,7 @@ class DivMerchant extends Merchant
 	/**
 	 * Enable thepay css for offline payment popup box
 	 */
-	public function enablePopupCss() : void
+	public function enablePopupCss()
 	{
 		$this->disablePopupCss = FALSE;
 	}

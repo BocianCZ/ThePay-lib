@@ -47,7 +47,7 @@ class ValueFormatter
 	 *
 	 * @return int
 	 */
-	public static function formatInt($value) : ?int
+	public static function formatInt($value)
 	{
 		if (is_null($value)) {
 			return NULL;
@@ -62,7 +62,7 @@ class ValueFormatter
 	 *
 	 * @return float
 	 */
-	public static function formatFloat($value) : ?float
+	public static function formatFloat($value)
 	{
 		if (is_null($value)) {
 			return NULL;
@@ -77,7 +77,7 @@ class ValueFormatter
 	 *
 	 * @return bool
 	 */
-	public static function formatBool($value) : ?bool
+	public static function formatBool($value)
 	{
 		if (is_null($value)) {
 			return NULL;
@@ -92,7 +92,7 @@ class ValueFormatter
 	 *
 	 * @return string
 	 */
-	public static function formatString($value) : ?string
+	public static function formatString($value)
 	{
 		if (is_null($value)) {
 			return NULL;
@@ -107,7 +107,7 @@ class ValueFormatter
 	 *
 	 * @return DateTimeInterface|null
 	 */
-	public static function formatDateTime($value) : ?DateTimeInterface
+	public static function formatDateTime($value)
 	{
 		if (is_null($value)) {
 			return NULL;

@@ -55,7 +55,7 @@ class Response extends DataApiObject
 		return $this->merchantId;
 	}
 
-	public function setMerchantId(int $merchantId) : void
+	public function setMerchantId(int $merchantId)
 	{
 		$this->merchantId = $merchantId;
 	}

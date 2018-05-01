@@ -18,22 +18,22 @@ abstract class Pagination extends DataApiObject
 	 */
 	protected $itemsOnPage;
 
-	public function getPage() : ?int
+	public function getPage()
 	{
 		return $this->page;
 	}
 
-	public function setPage(int $page = NULL) : void
+	public function setPage(int $page = NULL)
 	{
 		$this->page = $page;
 	}
 
-	public function getItemsOnPage() : ?int
+	public function getItemsOnPage()
 	{
 		return $this->itemsOnPage;
 	}
 
-	public function setItemsOnPage(int $itemsOnPage = NULL) : void
+	public function setItemsOnPage(int $itemsOnPage = NULL)
 	{
 		$this->itemsOnPage = $itemsOnPage;
 	}

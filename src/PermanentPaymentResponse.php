@@ -54,7 +54,7 @@ class PermanentPaymentResponse
 		return $this->status;
 	}
 
-	public function getErrorDescription() : ?string
+	public function getErrorDescription()
 	{
 		return $this->errorDescription;
 	}

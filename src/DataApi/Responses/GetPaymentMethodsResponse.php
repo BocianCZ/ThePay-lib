@@ -39,7 +39,7 @@ class GetPaymentMethodsResponse extends Response
 		return $instance;
 	}
 
-	public function getAccountId() : ?int
+	public function getAccountId()
 	{
 		return $this->accountId;
 	}
@@ -60,7 +60,7 @@ class GetPaymentMethodsResponse extends Response
 	/**
 	 * @param \Tp\DataApi\Parameters\MerchantAccountMethod[] $methods
 	 */
-	public function setMethods(array $methods = []) : void
+	public function setMethods(array $methods = [])
 	{
 		$this->methods = ValueFormatter::formatList(
 			'Tp\DataApi\Parameters\MerchantAccountMethod', $methods

@@ -17,22 +17,22 @@ class Ordering extends DataApiObject
 	 */
 	protected $orderHow;
 
-	public function getOrderBy() : ?string
+	public function getOrderBy()
 	{
 		return $this->orderBy;
 	}
 
-	public function setOrderBy(string $orderBy = NULL) : void
+	public function setOrderBy(string $orderBy = NULL)
 	{
 		$this->orderBy = $orderBy;
 	}
 
-	public function getOrderHow() : ?string
+	public function getOrderHow()
 	{
 		return $this->orderHow;
 	}
 
-	public function setOrderHow(string $orderHow = NULL) : void
+	public function setOrderHow(string $orderHow = NULL)
 	{
 		$this->orderHow = $orderHow;
 	}

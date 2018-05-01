@@ -22,32 +22,32 @@ class MerchantAccountMethod extends DataApiObject
 	 */
 	protected $active;
 
-	public function getId() : ?int
+	public function getId()
 	{
 		return $this->id;
 	}
 
-	public function setId(int $id = NULL) : void
+	public function setId(int $id = NULL)
 	{
 		$this->id = $id;
 	}
 
-	public function getName() : ?string
+	public function getName()
 	{
 		return $this->name;
 	}
 
-	public function setName(string $name = NULL) : void
+	public function setName(string $name = NULL)
 	{
 		$this->name = $name;
 	}
 
-	public function getActive() : ?bool
+	public function getActive()
 	{
 		return $this->active;
 	}
 
-	public function setActive(bool $active = NULL) : void
+	public function setActive(bool $active = NULL)
 	{
 		$this->active = $active;
 	}

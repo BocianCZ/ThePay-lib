@@ -13,12 +13,12 @@ class GetPaymentMethodsRequest extends Request
 	/**
 	 * @return bool|null
 	 */
-	public function getOnlyActive() : ?bool
+	public function getOnlyActive()
 	{
 		return $this->onlyActive;
 	}
 
-	public function setOnlyActive(bool $onlyActive = NULL) : void
+	public function setOnlyActive(bool $onlyActive = NULL)
 	{
 		$this->onlyActive = $onlyActive;
 	}

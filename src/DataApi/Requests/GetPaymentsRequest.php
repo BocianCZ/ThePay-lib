@@ -32,32 +32,32 @@ class GetPaymentsRequest extends Request
 	 */
 	protected $ordering;
 
-	public function getSearchParams() : ?GetPaymentsSearchParams
+	public function getSearchParams()
 	{
 		return $this->searchParams;
 	}
 
-	public function setSearchParams(GetPaymentsSearchParams $searchParams = NULL) : void
+	public function setSearchParams(GetPaymentsSearchParams $searchParams = NULL)
 	{
 		$this->searchParams = $searchParams;
 	}
 
-	public function getPagination() : ?PaginationRequest
+	public function getPagination()
 	{
 		return $this->pagination;
 	}
 
-	public function setPagination(PaginationRequest $pagination = NULL) : void
+	public function setPagination(PaginationRequest $pagination = NULL)
 	{
 		$this->pagination = $pagination;
 	}
 
-	public function getOrdering() : ?Ordering
+	public function getOrdering()
 	{
 		return $this->ordering;
 	}
 
-	public function setOrdering(Ordering $ordering = NULL) : void
+	public function setOrdering(Ordering $ordering = NULL)
 	{
 		$this->ordering = $ordering;
 	}

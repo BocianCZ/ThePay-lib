@@ -24,12 +24,12 @@ class GetPaymentInstructionsResponse extends Response
 		return $instance;
 	}
 
-	public function getPaymentInfo() : ?PaymentInfo
+	public function getPaymentInfo()
 	{
 		return $this->paymentInfo;
 	}
 
-	public function setPaymentInfo(PaymentInfo $paymentInfo = NULL) : void
+	public function setPaymentInfo(PaymentInfo $paymentInfo = NULL)
 	{
 		$this->paymentInfo = $paymentInfo;
 	}

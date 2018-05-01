@@ -11,12 +11,12 @@ class PaginationResponse extends Pagination
 	 */
 	protected $totalPages;
 
-	public function getTotalPages() : ?int
+	public function getTotalPages()
 	{
 		return $this->totalPages;
 	}
 
-	public function setTotalPages(int $totalPages = NULL) : void
+	public function setTotalPages(int $totalPages = NULL)
 	{
 		$this->totalPages = $totalPages;
 	}

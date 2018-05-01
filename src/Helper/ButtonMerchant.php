@@ -35,7 +35,7 @@ class ButtonMerchant extends Merchant
 	public function setButtonStyle(
 		string $buttonStyle,
 		string $buttonText = NULL
-	) : void {
+	) {
 		$this->buttonStyle = $buttonStyle;
 		if ( !is_null($buttonText)) {
 			$this->buttonText = $buttonText;
@@ -45,7 +45,7 @@ class ButtonMerchant extends Merchant
 	/**
 	 * Sets the buttonText property.
 	 */
-	public function setButtonText(string $buttonText) : void
+	public function setButtonText(string $buttonText)
 	{
 		$this->buttonText = $buttonText;
 	}

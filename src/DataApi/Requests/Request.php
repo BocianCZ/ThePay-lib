@@ -94,7 +94,7 @@ abstract class Request extends DataApiObject
 	/**
 	 * @throws BadMethodCallException
 	 */
-	protected function assertConfig() : void
+	protected function assertConfig()
 	{
 		if ( !$this->_config) {
 			$message = 'Tp\DataApi\Requests\Request instantiated without providing Tp\TpMerchantConfig. Use Tp\DataApi\Requests\Request::createWithConfig method instead of new Tp\DataApi\Requests\Request constructor.';

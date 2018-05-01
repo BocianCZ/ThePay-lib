@@ -21,12 +21,12 @@ class GetPaymentStateResponse extends Response
 		return $instance;
 	}
 
-	public function getState() : ?int
+	public function getState()
 	{
 		return $this->state;
 	}
 
-	public function setState(int $state = NULL) : void
+	public function setState(int $state = NULL)
 	{
 		$this->state = $state;
 	}

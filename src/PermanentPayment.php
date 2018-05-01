@@ -25,9 +25,9 @@ class PermanentPayment
 
 	function __construct(
 		MerchantConfig $config,
-		?string $merchantData,
-		?string $description,
-		?string $returnUrl
+		string $merchantData = null,
+		string $description = null,
+		string $returnUrl = null
 	) {
 		$this->config = $config;
 		$this->merchantData = $merchantData;
@@ -40,37 +40,37 @@ class PermanentPayment
 		return $this->config;
 	}
 
-	public function getMerchantData() : ?string
+	public function getMerchantData()
 	{
 		return $this->merchantData;
 	}
 
-	public function getDescription() : ?string
+	public function getDescription()
 	{
 		return $this->description;
 	}
 
-	public function getReturnUrl() : ?string
+	public function getReturnUrl()
 	{
 		return $this->returnUrl;
 	}
 
-	public function setMerchantConfig(MerchantConfig $config) : void
+	public function setMerchantConfig(MerchantConfig $config)
 	{
 		$this->config = $config;
 	}
 
-	public function setMerchantData(string $merchantData) : void
+	public function setMerchantData(string $merchantData)
 	{
 		$this->merchantData = $merchantData;
 	}
 
-	public function setDescription(string $description) : void
+	public function setDescription(string $description)
 	{
 		$this->description = $description;
 	}
 
-	public function setReturnUrl(string $returnUrl) : void
+	public function setReturnUrl(string $returnUrl)
 	{
 		$this->returnUrl = $returnUrl;
 	}

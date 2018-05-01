@@ -168,297 +168,297 @@ class Payment extends DataApiObject
 		return $this->id;
 	}
 
-	public function setId(int $id = NULL) : void
+	public function setId(int $id = NULL)
 	{
 		$this->id = $id;
 	}
 
-	public function getAccount() : ?int
+	public function getAccount()
 	{
 		return $this->account;
 	}
 
-	public function setAccount(int $account = NULL) : void
+	public function setAccount(int $account = NULL)
 	{
 		$this->account = $account;
 	}
 
-	public function getState() : ?int
+	public function getState()
 	{
 		return $this->state;
 	}
 
-	public function setState(int $state = NULL) : void
+	public function setState(int $state = NULL)
 	{
 		$this->state = $state;
 	}
 
-	public function getCreatedOn() : ?DateTimeImmutable
+	public function getCreatedOn()
 	{
 		return $this->createdOn;
 	}
 
-	public function setCreatedOn(DateTimeImmutable $createdOn = NULL) : void
+	public function setCreatedOn(DateTimeImmutable $createdOn = NULL)
 	{
 		$this->createdOn = $createdOn;
 	}
 
-	public function getFinishedOn() : ?DateTimeImmutable
+	public function getFinishedOn()
 	{
 		return $this->finishedOn;
 	}
 
-	public function setFinishedOn(DateTimeImmutable $finishedOn = NULL) : void
+	public function setFinishedOn(DateTimeImmutable $finishedOn = NULL)
 	{
 		$this->finishedOn = $finishedOn;
 	}
 
-	public function getCanceledOn() : ?DateTimeImmutable
+	public function getCanceledOn()
 	{
 		return $this->canceledOn;
 	}
 
-	public function setCanceledOn(DateTimeImmutable $canceledOn = NULL) : void
+	public function setCanceledOn(DateTimeImmutable $canceledOn = NULL)
 	{
 		$this->canceledOn = $canceledOn;
 	}
 
-	public function getPayOff() : ?int
+	public function getPayOff()
 	{
 		return $this->payOff;
 	}
 
-	public function setPayOff(int $payOff = NULL) : void
+	public function setPayOff(int $payOff = NULL)
 	{
 		$this->payOff = $payOff;
 	}
 
-	public function getPayOffCancel() : ?int
+	public function getPayOffCancel()
 	{
 		return $this->payOffCancel;
 	}
 
-	public function setPayOffCancel(int $payOffCancel = NULL) : void
+	public function setPayOffCancel(int $payOffCancel = NULL)
 	{
 		$this->payOffCancel = $payOffCancel;
 	}
 
-	public function getValue() : ?float
+	public function getValue()
 	{
 		return $this->value;
 	}
 
-	public function setValue(float $value = NULL) : void
+	public function setValue(float $value = NULL)
 	{
 		$this->value = $value;
 	}
 
-	public function getReceivedValue() : ?float
+	public function getReceivedValue()
 	{
 		return $this->receivedValue;
 	}
 
-	public function setReceivedValue(float $receivedValue = NULL) : void
+	public function setReceivedValue(float $receivedValue = NULL)
 	{
 		$this->receivedValue = $receivedValue;
 	}
 
-	public function getCurrency() : ?int
+	public function getCurrency()
 	{
 		return $this->currency;
 	}
 
-	public function setCurrency(?int $currency) : void
+	public function setCurrency(int $currency = null)
 	{
 		$this->currency = $currency;
 	}
 
-	public function getFee() : ?float
+	public function getFee()
 	{
 		return $this->fee;
 	}
 
-	public function setFee(?float $fee) : void
+	public function setFee(float $fee = null)
 	{
 		$this->fee = $fee;
 	}
 
-	public function getDescription() : ?string
+	public function getDescription()
 	{
 		return $this->description;
 	}
 
-	public function setDescription(string $description = NULL) : void
+	public function setDescription(string $description = NULL)
 	{
 		$this->description = $description;
 	}
 
-	public function getMerchantData() : ?string
+	public function getMerchantData()
 	{
 		return $this->merchantData;
 	}
 
-	public function setMerchantData(string $merchantData = NULL) : void
+	public function setMerchantData(string $merchantData = NULL)
 	{
 		$this->merchantData = $merchantData;
 	}
 
-	public function getPaymentMethod() : ?int
+	public function getPaymentMethod()
 	{
 		return $this->paymentMethod;
 	}
 
-	public function setPaymentMethod(?int $paymentMethod) : void
+	public function setPaymentMethod(int $paymentMethod = null)
 	{
 		$this->paymentMethod = $paymentMethod;
 	}
 
-	public function getSpecificSymbol() : ?string
+	public function getSpecificSymbol()
 	{
 		return $this->specificSymbol;
 	}
 
-	public function setSpecificSymbol(string $specificSymbol = NULL) : void
+	public function setSpecificSymbol(string $specificSymbol = NULL)
 	{
 		$this->specificSymbol = $specificSymbol;
 	}
 
-	public function getMerchantSpecificSymbol() : ?string
+	public function getMerchantSpecificSymbol()
 	{
 		return $this->merchantSpecificSymbol;
 	}
 
-	public function setMerchantSpecificSymbol(string $merchantSpecificSymbol = NULL) : void
+	public function setMerchantSpecificSymbol(string $merchantSpecificSymbol = NULL)
 	{
 		$this->merchantSpecificSymbol = $merchantSpecificSymbol;
 	}
 
-	public function getAccountNumber() : ?string
+	public function getAccountNumber()
 	{
 		return $this->accountNumber;
 	}
 
-	public function setAccountNumber(string $accountNumber = NULL) : void
+	public function setAccountNumber(string $accountNumber = NULL)
 	{
 		$this->accountNumber = $accountNumber;
 	}
 
-	public function getAccountOwnerName() : ?string
+	public function getAccountOwnerName()
 	{
 		return $this->accountOwnerName;
 	}
 
-	public function setAccountOwnerName(string $accountOwnerName = NULL) : void
+	public function setAccountOwnerName(string $accountOwnerName = NULL)
 	{
 		$this->accountOwnerName = $accountOwnerName;
 	}
 
-	public function getReturnUrl() : ?string
+	public function getReturnUrl()
 	{
 		return $this->returnUrl;
 	}
 
-	public function setReturnUrl(string $returnUrl = NULL) : void
+	public function setReturnUrl(string $returnUrl = NULL)
 	{
 		$this->returnUrl = $returnUrl;
 	}
 
-	public function getPermanentPayment() : ?int
+	public function getPermanentPayment()
 	{
 		return $this->permanentPayment;
 	}
 
-	public function setPermanentPayment(int $permanentPayment = NULL) : void
+	public function setPermanentPayment(int $permanentPayment = NULL)
 	{
 		$this->permanentPayment = $permanentPayment;
 	}
 
-	public function getDeposit() : ?bool
+	public function getDeposit()
 	{
 		return $this->deposit;
 	}
 
-	public function setDeposit(bool $deposit = NULL) : void
+	public function setDeposit(bool $deposit = NULL)
 	{
 		$this->deposit = $deposit;
 	}
 
-	public function getRecurring() : ?bool
+	public function getRecurring()
 	{
 		return $this->recurring;
 	}
 
-	public function setRecurring(bool $recurring = NULL) : void
+	public function setRecurring(bool $recurring = NULL)
 	{
 		$this->recurring = $recurring;
 	}
 
-	public function getIp() : ?string
+	public function getIp()
 	{
 		return $this->ip;
 	}
 
-	public function setIp(string $ip = NULL) : void
+	public function setIp(string $ip = NULL)
 	{
 		$this->ip = $ip;
 	}
 
-	public function getCustomerEmail() : ?string
+	public function getCustomerEmail()
 	{
 		return $this->customerEmail;
 	}
 
-	public function setCustomerEmail(string $customerEmail = NULL) : void
+	public function setCustomerEmail(string $customerEmail = NULL)
 	{
 		$this->customerEmail = $customerEmail;
 	}
 
-	public function getFik() : ?string
+	public function getFik()
 	{
 		return $this->fik;
 	}
 
-	public function setFik(string $fik = NULL) : void
+	public function setFik(string $fik = NULL)
 	{
 		$this->fik = $fik;
 	}
 
-	public function getBkp() : ?string
+	public function getBkp()
 	{
 		return $this->bkp;
 	}
 
-	public function setBkp(string $bkp = NULL) : void
+	public function setBkp(string $bkp = NULL)
 	{
 		$this->bkp = $bkp;
 	}
 
-	public function getPkp() : ?string
+	public function getPkp()
 	{
 		return $this->pkp;
 	}
 
-	public function setPkp(string $pkp = NULL) : void
+	public function setPkp(string $pkp = NULL)
 	{
 		$this->pkp = $pkp;
 	}
 
-	public function getReceiptUrl() : ?string
+	public function getReceiptUrl()
 	{
 		return $this->receiptUrl;
 	}
 
-	public function setReceiptUrl(string $receiptUrl = NULL) : void
+	public function setReceiptUrl(string $receiptUrl = NULL)
 	{
 		$this->receiptUrl = $receiptUrl;
 	}
 
-	public function getFirstSuccess() : ?bool
+	public function getFirstSuccess()
 	{
 		return $this->firstSuccess;
 	}
 
-	public function setFirstSuccess(bool $firstSuccess = NULL) : void
+	public function setFirstSuccess(bool $firstSuccess = NULL)
 	{
 		$this->firstSuccess = $firstSuccess;
 	}

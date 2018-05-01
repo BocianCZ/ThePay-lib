@@ -67,7 +67,7 @@ class RadioMerchant
 	/**
 	 * @param MerchantConfig $config merchant configuration
 	 */
-	public function setConfig(MerchantConfig $config) : void
+	public function setConfig(MerchantConfig $config)
 	{
 		$this->config = $config;
 	}
@@ -83,7 +83,7 @@ class RadioMerchant
 	/**
 	 * @param string $name name of original radio buttons with payment methods
 	 */
-	public function setName(string $name) : void
+	public function setName(string $name)
 	{
 		$this->name = $name;
 	}
@@ -99,7 +99,7 @@ class RadioMerchant
 	/**
 	 * @param string|int $value value of radio button that originally represents ThePay payment method
 	 */
-	public function setValue($value) : void
+	public function setValue($value)
 	{
 		$this->value = $value;
 	}
@@ -107,7 +107,7 @@ class RadioMerchant
 	/**
 	 * @param bool $showIcon if payment method graphical icon should be rendered in radiobutton's label
 	 */
-	public function setShowIcon(bool $showIcon) : void
+	public function setShowIcon(bool $showIcon)
 	{
 		$this->showIcon = $showIcon;
 	}
@@ -125,7 +125,7 @@ class RadioMerchant
 		return $this->appendCode;
 	}
 
-	public function setAppendCode($appendCode) : void
+	public function setAppendCode($appendCode)
 	{
 		$this->appendCode = $appendCode;
 	}
@@ -138,7 +138,7 @@ class RadioMerchant
 	/**
 	 * Disable/enable thepay css for offline payment popup box
 	 */
-	public function setDisablePopupCss(bool $disablePopupCss) : void
+	public function setDisablePopupCss(bool $disablePopupCss)
 	{
 		$this->disablePopupCss = $disablePopupCss;
 	}
@@ -211,7 +211,7 @@ class RadioMerchant
 		return !empty($_REQUEST['tp_radio_value']);
 	}
 
-	protected function clearCookies() : void
+	protected function clearCookies()
 	{
 		setcookie('tp_selected_val', '', 1);
 	}
@@ -280,7 +280,7 @@ class RadioMerchant
 	/**
 	 * @deprecated
 	 */
-	public function redirectOfflinePayment(Payment $payment, callable $redirecFunc = NULL) : void
+	public function redirectOfflinePayment(Payment $payment, callable $redirecFunc = NULL)
 	{
 		$this->redirectOnlinePayment($payment, $redirecFunc);
 	}

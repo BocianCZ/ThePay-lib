@@ -31,7 +31,7 @@ class GetPaymentResponse extends Response
 		return $instance;
 	}
 
-	public function getPayment() : ?Payment
+	public function getPayment()
 	{
 		return $this->payment;
 	}

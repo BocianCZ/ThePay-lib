@@ -7,8 +7,8 @@ use Tp\Utils;
 
 class SetPaymentMethodsResponse extends Response
 {
-	public const STATUS_OK    = 'OK';
-	public const STATUS_ERROR = 'ERROR';
+	const STATUS_OK    = 'OK';
+	const STATUS_ERROR = 'ERROR';
 
 	/**
 	 * @var int
@@ -33,17 +33,17 @@ class SetPaymentMethodsResponse extends Response
 		return $this->accountId;
 	}
 
-	public function setAccountId(int $accountId) : void
+	public function setAccountId(int $accountId)
 	{
 		$this->accountId = $accountId;
 	}
 
-	public function getStatus() : ?string
+	public function getStatus()
 	{
 		return $this->status;
 	}
 
-	public function setStatus(string $status = NULL) : void
+	public function setStatus(string $status = NULL)
 	{
 		$this->status = $status;
 	}

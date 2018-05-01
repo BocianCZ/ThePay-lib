@@ -94,132 +94,132 @@ class PaymentInfo extends DataApiObject
 	 */
 	protected $scBarcodeUrl;
 
-	public function getIsOffline() : ?bool
+	public function getIsOffline()
 	{
 		return $this->isOffline;
 	}
 
-	public function setIsOffline(bool $isOffline = NULL) : void
+	public function setIsOffline(bool $isOffline = NULL)
 	{
 		$this->isOffline = $isOffline;
 	}
 
-	public function getPaymentPageUrl() : ?string
+	public function getPaymentPageUrl()
 	{
 		return $this->paymentPageUrl;
 	}
 
-	public function setPaymentPageUrl(string $paymentPageUrl = NULL) : void
+	public function setPaymentPageUrl(string $paymentPageUrl = NULL)
 	{
 		$this->paymentPageUrl = $paymentPageUrl;
 	}
 
-	public function getPaymentInfoUrl() : ?string
+	public function getPaymentInfoUrl()
 	{
 		return $this->paymentInfoUrl;
 	}
 
-	public function setPaymentInfoUrl(string $paymentInfoUrl = NULL) : void
+	public function setPaymentInfoUrl(string $paymentInfoUrl = NULL)
 	{
 		$this->paymentInfoUrl = $paymentInfoUrl;
 	}
 
-	public function getMethodChangeUrl() : ?string
+	public function getMethodChangeUrl()
 	{
 		return $this->methodChangeUrl;
 	}
 
-	public function setMethodChangeUrl(string $methodChangeUrl = NULL) : void
+	public function setMethodChangeUrl(string $methodChangeUrl = NULL)
 	{
 		$this->methodChangeUrl = $methodChangeUrl;
 	}
 
-	public function getValue() : ?float
+	public function getValue()
 	{
 		return $this->value;
 	}
 
-	public function setValue(?float $value) : void
+	public function setValue(float $value = null)
 	{
 		$this->value = $value;
 	}
 
-	public function getAccountNumberPrefix() : ?string
+	public function getAccountNumberPrefix()
 	{
 		return $this->accountNumberPrefix;
 	}
 
-	public function setAccountNumberPrefix(string $accountNumberPrefix = NULL) : void
+	public function setAccountNumberPrefix(string $accountNumberPrefix = NULL)
 	{
 		$this->accountNumberPrefix = $accountNumberPrefix;
 	}
 
-	public function getAccountNumber() : ?string
+	public function getAccountNumber()
 	{
 		return $this->accountNumber;
 	}
 
-	public function setAccountNumber(string $accountNumber = NULL) : void
+	public function setAccountNumber(string $accountNumber = NULL)
 	{
 		$this->accountNumber = $accountNumber;
 	}
 
-	public function getBankCode() : ?string
+	public function getBankCode()
 	{
 		return $this->bankCode;
 	}
 
-	public function setBankCode(string $bankCode = NULL) : void
+	public function setBankCode(string $bankCode = NULL)
 	{
 		$this->bankCode = $bankCode;
 	}
 
-	public function getVs() : ?string
+	public function getVs()
 	{
 		return $this->vs;
 	}
 
-	public function setVs(string $vs = NULL) : void
+	public function setVs(string $vs = NULL)
 	{
 		$this->vs = $vs;
 	}
 
-	public function getSs() : ?string
+	public function getSs()
 	{
 		return $this->ss;
 	}
 
-	public function setSs(string $ss = NULL) : void
+	public function setSs(string $ss = NULL)
 	{
 		$this->ss = $ss;
 	}
 
-	public function getEbankingUrl() : ?string
+	public function getEbankingUrl()
 	{
 		return $this->ebankingUrl;
 	}
 
-	public function setEbankingUrl(string $ebankingUrl = NULL) : void
+	public function setEbankingUrl(string $ebankingUrl = NULL)
 	{
 		$this->ebankingUrl = $ebankingUrl;
 	}
 
-	public function getScCode() : ?string
+	public function getScCode()
 	{
 		return $this->scCode;
 	}
 
-	public function setScCode(string $scCode = NULL) : void
+	public function setScCode(string $scCode = NULL)
 	{
 		$this->scCode = $scCode;
 	}
 
-	public function getScBarcodeUrl() : ?string
+	public function getScBarcodeUrl()
 	{
 		return $this->scBarcodeUrl;
 	}
 
-	public function setScBarcodeUrl(string $scBarcodeUrl = NULL) : void
+	public function setScBarcodeUrl(string $scBarcodeUrl = NULL)
 	{
 		$this->scBarcodeUrl = $scBarcodeUrl;
 	}

@@ -92,7 +92,7 @@ class GetPaymentsSearchParams extends DataApiObject
 	/**
 	 * @param int[] $accountId
 	 */
-	public function setAccountId(array $accountId = []) : void
+	public function setAccountId(array $accountId = [])
 	{
 		$this->accountId = ValueFormatter::formatList(
 			'int', $accountId
@@ -110,7 +110,7 @@ class GetPaymentsSearchParams extends DataApiObject
 	/**
 	 * @param int[] $state
 	 */
-	public function setState(array $state = []) : void
+	public function setState(array $state = [])
 	{
 		$this->state = ValueFormatter::formatList(
 			'int', $state
@@ -128,69 +128,69 @@ class GetPaymentsSearchParams extends DataApiObject
 	/**
 	 * @param int[] $currency
 	 */
-	public function setCurrency(array $currency = []) : void
+	public function setCurrency(array $currency = [])
 	{
 		$this->currency = ValueFormatter::formatList(
 			'int', $currency
 		);
 	}
 
-	public function getValueFrom() : ?float
+	public function getValueFrom()
 	{
 		return $this->valueFrom;
 	}
 
-	public function setValueFrom(?float $valueFrom = NULL) : void
+	public function setValueFrom(float $valueFrom = NULL)
 	{
 		$this->valueFrom = $valueFrom;
 	}
 
-	public function getValueTo() : ?float
+	public function getValueTo()
 	{
 		return $this->valueTo;
 	}
 
-	public function setValueTo(?float $valueTo = NULL) : void
+	public function setValueTo(float $valueTo = NULL)
 	{
 		$this->valueTo = $valueTo;
 	}
 
-	public function getCreatedOnFrom() : ?DateTimeImmutable
+	public function getCreatedOnFrom()
 	{
 		return $this->createdOnFrom;
 	}
 
-	public function setCreatedOnFrom(DateTimeImmutable $createdOnFrom = NULL) : void
+	public function setCreatedOnFrom(DateTimeImmutable $createdOnFrom = NULL)
 	{
 		$this->createdOnFrom = $createdOnFrom;
 	}
 
-	public function getCreatedOnTo() : ?DateTimeImmutable
+	public function getCreatedOnTo()
 	{
 		return $this->createdOnTo;
 	}
 
-	public function setCreatedOnTo(DateTimeImmutable $createdOnTo = NULL) : void
+	public function setCreatedOnTo(DateTimeImmutable $createdOnTo = NULL)
 	{
 		$this->createdOnTo = $createdOnTo;
 	}
 
-	public function getFinishedOnFrom() : ?DateTimeImmutable
+	public function getFinishedOnFrom()
 	{
 		return $this->finishedOnFrom;
 	}
 
-	public function setFinishedOnFrom(DateTimeImmutable $finishedOnFrom = NULL) : void
+	public function setFinishedOnFrom(DateTimeImmutable $finishedOnFrom = NULL)
 	{
 		$this->finishedOnFrom = $finishedOnFrom;
 	}
 
-	public function getFinishedOnTo() : ?DateTimeImmutable
+	public function getFinishedOnTo()
 	{
 		return $this->finishedOnTo;
 	}
 
-	public function setFinishedOnTo(\DateTimeImmutable $finishedOnTo = NULL) : void
+	public function setFinishedOnTo(\DateTimeImmutable $finishedOnTo = NULL)
 	{
 		$this->finishedOnTo = $finishedOnTo;
 	}
@@ -206,29 +206,29 @@ class GetPaymentsSearchParams extends DataApiObject
 	/**
 	 * @param int[] $accounting
 	 */
-	public function setAccounting(array $accounting = []) : void
+	public function setAccounting(array $accounting = [])
 	{
 		$this->accounting = ValueFormatter::formatList(
 			'int', $accounting
 		);
 	}
 
-	public function getDescription() : ?string
+	public function getDescription()
 	{
 		return $this->description;
 	}
 
-	public function setDescription(string $description = NULL) : void
+	public function setDescription(string $description = NULL)
 	{
 		$this->description = $description;
 	}
 
-	public function getMerchantData() : ?string
+	public function getMerchantData()
 	{
 		return $this->merchantData;
 	}
 
-	public function setMerchantData(string $merchantData = NULL) : void
+	public function setMerchantData(string $merchantData = NULL)
 	{
 		$this->merchantData = $merchantData;
 	}
@@ -251,12 +251,12 @@ class GetPaymentsSearchParams extends DataApiObject
 		);
 	}
 
-	public function getSpecificSymbol() : ?string
+	public function getSpecificSymbol()
 	{
 		return $this->specificSymbol;
 	}
 
-	public function setSpecificSymbol(string $specificSymbol = NULL) : void
+	public function setSpecificSymbol(string $specificSymbol = NULL)
 	{
 		$this->specificSymbol = $specificSymbol;
 	}

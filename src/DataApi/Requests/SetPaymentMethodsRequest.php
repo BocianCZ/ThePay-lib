@@ -45,7 +45,7 @@ class SetPaymentMethodsRequest extends Request
 	 *
 	 * @param int[] $paymentMethods id's of payment methods
 	 */
-	function setPaymentMethods(array $paymentMethods) : void
+	function setPaymentMethods(array $paymentMethods)
 	{
 		$this->paymentMethods = ValueFormatter::formatList('int', $paymentMethods);
 

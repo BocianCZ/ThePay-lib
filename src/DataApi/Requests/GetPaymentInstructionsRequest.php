@@ -10,12 +10,12 @@ class GetPaymentInstructionsRequest extends Request
 	 */
 	protected $paymentId;
 
-	public function getPaymentId() : ?int
+	public function getPaymentId()
 	{
 		return $this->paymentId;
 	}
 
-	public function setPaymentId(int $paymentId = NULL) : void
+	public function setPaymentId(int $paymentId = NULL)
 	{
 		$this->paymentId = $paymentId;
 	}
