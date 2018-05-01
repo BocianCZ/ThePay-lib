@@ -47,7 +47,7 @@ class Digester
 			}
 
 			if ($value instanceof DateTimeInterface) {
-				$value = $value->format(DateTimeInterface::ISO8601);
+				$value = $value->format(\DateTime::ATOM);
 			}
 
 			$stringParts[] = "{$key}={$value}";

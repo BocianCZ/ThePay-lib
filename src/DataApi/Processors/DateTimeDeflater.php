@@ -16,7 +16,7 @@ class DateTimeDeflater extends ProcessorWithPaths
 			&& $onPath
 			&& $value instanceof DateTimeInterface
 		) {
-			return $value->format(DateTimeInterface::ISO8601);
+			return $value->format(\DateTime::ATOM);
 		}
 
 		return $value;
